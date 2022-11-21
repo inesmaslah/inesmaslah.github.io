@@ -1,0 +1,6 @@
+div * p {color:red}
+.menu li .sel {font-size: 24pt;color: blue}
+#menu > p {color: green;}
+h1 + h2 {margin-top: -20mm;}
+h1.opener + h2 {margin-top: _100mm;}
+h2 + p {margin-top: 0.8em;}
