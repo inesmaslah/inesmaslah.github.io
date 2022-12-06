@@ -2,4 +2,9 @@ body{background-image: url("cement.jpg");}
 h1{text-align: center;}
 h2{color: blue; background-color: grey;}
 p{text-align: justify; margin-left: 16px;}
-.surligne{background-color: seashell;}
+
+p.surligne{background-color: seashell;}
+span.surligne{background-color: yellow;}
+div.surligne{background-color: slateblue;}
+
+
