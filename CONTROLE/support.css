@@ -12,3 +12,11 @@ div.surligne{background-color: slateblue;}
 ol li{list-style-type: upper-roman;}
 ol li ol li{list-style-type: lower-latin;}
 ol li ol li ol li{list-style-type: lower-roman;}
+
+nav{
+float:left;
+padding: 17px;
+vertical-align: baseline;
+display: block;
+font-family: sans-serif;
+font-size: 17px;}
