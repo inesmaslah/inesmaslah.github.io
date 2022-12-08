@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Nom du site web dans l'onglet</title>
+	<style>
+		body{background-color: lightpink;font-family: sans-serif;}
+	</style>
+</head>
+
+<body>
+	<h1>GROUPE 1</h1>
+	<h3>CASES A COCHER</h3>
+
+<fieldset>
+	<legend>HOW</legend>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="ok">un peu</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="ok">beaucoup</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="ok">pas du tout</label>
+	</div>
+</fieldset>
+
+	<h3>BOUTONS</h3>
+
+	<div>
+		<button type="submit"><h2>OUI</h2></button>
+		<button type="submit"><h2>NON</h2></button>
+	</div>
+
+	<h3>LISTE DEROULANTE</h3>
+
+<div>
+<label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="chien">Chien</option>
+    <option value="chat">Chat</option>
+    <option value="hamster">Hamster</option>
+    <option value="araignee">Araignee</option>
+    <option value="poisson">poisson</option>
+</select>
+</div>
+
+<h3>BOUTON VERS UN LIEN</h3>
+<input class="favorite styled"
+       type="button"
+       onclick="window.location.href = 'https://www.instagram.com/kyliejenner/';
+       "value="Follow moi"/>
+
+<h3>ESPACE COMMENTAIRE</h3>
+
+<form method="post" action="ton_script_recup_data_form.php">
+	<p>Pseudo : <input type="text" name="pseudo" value="" /></p>
+	<p>
+		Votre commentaire :<br />
+		<textarea name="commentaire" rows="60" cols="80"></textarea>
+	</p>
+</form>
+
+
+
+</body>
+</html>
