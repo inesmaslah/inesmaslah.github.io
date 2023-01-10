@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Lettre de réclamation</title>
+	<link rel="stylesheet" type="text/css"
+    href="mainPDF.css" media="print">
+</head>
+
+<body>
+
+	<div id="page">
+	<h1 id="top">LETTRE DE RÉCLAMATION</h1>
+
+	<h3>DATE ET LIEU</h3>
+	<form method="post" action="ton_script_recup_data_form.php">
+	<p>Le : <input type="text" name="DATE" value="" />
+	À : <input type="text" name="LIEU" value="" /></p>
+	</form>
+
+	<h3>CIVILITÉ</h3>
+	<div>
+		<h5><button type="submit">Madame</button></h5> <h5><button type="submit">Monsieur</button></h5> <h5><button type="submit">Mademoiselle</button></h5> <h5><button type="submit">Non renseignée</button></h5>
+	</div>
+
+	<h3>NOM PRÉNOM</h3>
+	<form method="post" action="ton_script_recup_data_form.php">
+	<p>Nom : <input type="text" name="nom" value="" /></p>
+	<p>Prénom : <input type="text" name="prénom" value="" /></p>
+	</form>
+
+
+	<h3>OBJET DE LA DEMANDE </h3>
+	<fieldset>
+	<legend>DEMANDE DE :</legend>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Droit d'accès à mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Droit d'effacement de mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Droit de rectification de mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Droit d'information sur mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Droit d'opposition au traitement de mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Autres droits sur mes données personnelles</label>
+	</div>
+	<div>
+	<input type="checkbox" id="subscribe" name="subscribe">
+	<label for="subscribe">Autre demande</label>
+	</div>
+
+	<h3>ÉTABLISSEMENT DESTINATAIRE</h3>
+
+<div>
+<label for="uni-select">Sélectionnez un établissement</label>
+<select name="universités" id="uni-select">
+    <option value="">--Choisir une option--</option>
+    <option value="UPEC">UPEC</option>
+    <option value="UPEM">UPEM</option>
+    <option value="Panthéon-Assas">Panthéon-Assas</option>
+    <option value="Sorbonne">Sorbonne</option>
+    <option value="Saclay">Paris Saclay</option>
+    <option value="Cergy">Cergy</option>
+    <option value="poisson">Autre</option>
+</select>
+	<form method="post" action="ton_script_recup_data_form.php">
+	<p>Établissement destinataire (si absent de la liste) : <input type="text" name="nom" value="" /></p>
+	</form>
+
+	<h3>NOM DU DESTINATAIRE DE LA LETTRE</h3>
+
+	<form method="post" action="ton_script_recup_data_form.php">
+	<p>Destinataire :<input type="text" name="nom" value="" /></p>
+	</form>
+
+	<h3>MA DEMANDE :</h3>
+<form method="post" action="ton_script_recup_data_form.php">
+	<p>
+		Indiquez le contenu de votre demande ci-dessous :<br />
+		<textarea name="demande" rows="60" cols="80"></textarea>
+	</p>
+</form>
+
+<h3>FORMULE DE POLITESSE</h3>
+
+<div>
+<label for="uni-select">Sélectionnez une formule de politesse</label>
+<select name="formule" id="fomule-select">
+    <option value="">--Choisir une option--</option>
+    <option value="1">Bien à vous.</option>
+    <option value="2">Bien cordialement.</option>
+    <option value="3">Je vous prie d'agréer, Madame, l'expression de mes salutations distinguées.</option>
+    <option value="4">Je vous prie d'agréer, Monsieur, l'expression de mes salutations distiguées.</option>
+    <option value="poisson">Autre</option>
+</select>
+</div>
+<form method="post" action="ton_script_recup_data_form.php">
+	<p>Autre : <input type="text" name="nom" value="" /></p>
+	</form>
+
+<h3>VOTRE SIGNATURE</h3>
+<form method="post" action="ton_script_recup_data_form.php">
+	<p>Signez ci-après :<input type="text" name="nom" value="" /></p>
+	</form>
+
+
+<div id="footer">
+<h3>Pour toute information complémentaire</h3>
+
+<input class="favorite styled"
+       type="button"
+       onclick="window.location.href = 'https://www.diplomatie.gouv.fr/fr/mentions-legales/politique-de-confidentialite/';"value="Politique de confidentialité"/>
+</div><!--fermeture footer--> 
+
+</div><!--fermeture page-->
+
+</body>

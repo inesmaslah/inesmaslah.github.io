@@ -1,0 +1,36 @@
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+    background-color : #fff;
+    font-family :Serif;
+    font-size :15pt;
+  }
+  
+@media print {
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+} 
+  input[type="checkbox"]:not(:checked) + label{
+    display: none;
+} 
+  
+  input[type="checkbox"]:checked + label::before {
+    content: "- ";
+  }
+    
+}
+
+h3 {
+    display: none;
+  }
+
+#page { /* Modifications : suppression de la bordure - marges */
+  margin :0;
+  border :none;
+}
